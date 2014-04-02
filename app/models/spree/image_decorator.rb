@@ -5,6 +5,6 @@ Spree::Image.class_eval do
   has_many :variants, through: :variant_images
 
   def variant_html_classes
-    variant_ids.map { |variant| "tmb-#{variant}"}.join(" ")
+    variant_ids.map { |variant| "#{variant}"}.join(" ")
   end
 end
